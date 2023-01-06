@@ -9,7 +9,7 @@
         <Fold/>
       </el-icon>
     </div>
-    <div class="logo">校友交流后台管理系统</div>
+    <div class="logo"><img class="logo-img" src="src/assets/img/logo.png">校友交流后台管理系统</div>
     <div class="header-right">
       <div class="header-user-con">
         <!-- 用户头像 -->
@@ -94,6 +94,12 @@ const handleCommand = (command: string) => {
   float: left;
   width: 250px;
   line-height: 70px;
+}
+.header .logo .logo-img{
+  height: 42px;
+  float: left;
+  margin-top: 12px;
+  margin-right: 12px;
 }
 
 .header-right {

@@ -105,6 +105,12 @@ const items = [
     permiss: '7'
   },
   {
+    icon: 'Message',
+    index: '/push',
+    title: '内推管理',
+    permiss: '28'
+  },
+  {
     icon: 'ChatDotRound',
     title: '帖子管理',
     permiss: '10',

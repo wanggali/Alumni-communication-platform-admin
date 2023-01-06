@@ -17,7 +17,7 @@
         <el-table-column prop="id" label="ID" width="55" align="center"></el-table-column>
         <el-table-column label="公告内容">
           <template #default="scope">
-            <el-button type="success" plain size="small" @click="showMessage(scope.$index,scope.row)">查看帖子</el-button>
+            <el-button type="success" plain size="small" @click="showMessage(scope.$index,scope.row)">查看公告</el-button>
           </template>
         </el-table-column>
         <el-table-column label="状态" align="center">

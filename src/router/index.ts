@@ -201,6 +201,15 @@ const routes: RouteRecordRaw[] = [
                     permiss: '18'
                 },
                 component: () => import (/* webpackChunkName: "user" */ '../views/role.vue')
+            },
+            {
+                path: '/push',
+                name: 'push',
+                meta: {
+                    title: '内推管理',
+                    permiss: '28'
+                },
+                component: () => import (/* webpackChunkName: "user" */ '../views/push.vue')
             }
         ]
     },
