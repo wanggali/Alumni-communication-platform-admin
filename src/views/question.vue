@@ -53,7 +53,7 @@
                 :icon="InfoFilled"
                 @confirm="confirmEvent(scope.row)"
                 @cancel="cancelEvent(scope.row)"
-                title="审批帖子">
+                title="审批问题">
               <template #reference>
                 <el-button v-permiss="22">审核</el-button>
               </template>
@@ -150,11 +150,11 @@ const handleSearch = () => {
 //删除
 const batchDelete = () => {
   if (selectionQuery.ids[0] == null) {
-    ElMessage.warning("未选中删除帖子目标")
+    ElMessage.warning("未选中删除问题目标")
     return;
   }
   ElMessageBox.confirm(
-      '确定要批量删除帖子吗?',
+      '确定要批量删除问题吗?',
       'Warning',
   )
       .then(async () => {
@@ -171,7 +171,7 @@ const batchDelete = () => {
 
 const handleDelete = (index: number, row: any) => {
   ElMessageBox.confirm(
-      '确定要删除该帖子吗?',
+      '确定要删除该问题吗?',
       'Warning',
   ).then(async () => {
     selectionQuery.ids.push(row.id)

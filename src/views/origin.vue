@@ -73,10 +73,10 @@
 
     <el-dialog title="添加组织" v-model="addVisible" width="30%">
       <el-form label-width="70px">
-        <el-form-item label="用户名">
+        <el-form-item label="组织名">
           <el-input v-model="addOrigin.name"></el-input>
         </el-form-item>
-        <el-form-item label="地区">
+        <el-form-item label="学院">
           <college-select @get-college-id="getCollegeId"/>
         </el-form-item>
         <el-form-item label="用户id">

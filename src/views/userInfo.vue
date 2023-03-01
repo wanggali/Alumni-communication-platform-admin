@@ -70,7 +70,7 @@
                              :regionName="userStore.currentUser.regionName"/>
             </el-form-item>
             <el-form-item label="签名">
-              <el-input type="text" :placeholder="userStore.currentUser.sign"
+              <el-input type="text" :placeholder="userStore.currentUser.userSign"
                         v-model="updateUserReq.user.sign"></el-input>
             </el-form-item>
             <el-form-item label="状态">
