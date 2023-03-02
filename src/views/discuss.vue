@@ -123,9 +123,9 @@ import {usePermissStore} from "../store/permiss";
 const query = reactive<any>({
   pageNum: 1,
   pageSize: 10,
-  title: '',
+  title: null,
   sortType: null,
-  isAuditType: ''
+  isAuditType: null
 })
 const pageTotal = ref<number>(0)
 const tableData = ref<Discuss[]>([])

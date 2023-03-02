@@ -128,7 +128,7 @@ const getInWeek = async () => {
 const options = {
   type: 'bar',
   title: {
-    text: '最近一周点赞数'
+    text: '周内评论/回复数'
   },
   xRorate: 25,
   labels: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
@@ -147,7 +147,7 @@ const options = {
 const options1 = {
   type: 'line',
   title: {
-    text: '最近一周评论数'
+    text: '周内点赞峰值'
   },
   xRorate: 25,
   labels: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
