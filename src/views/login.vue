@@ -122,7 +122,7 @@ const submitForm = async (formEl: FormInstance | undefined) => {
           router.push('/')
         }, 3000)
       } else {
-        ElMessage.error('邮箱/密码输入错误');
+        ElMessage.error(result.message);
         return false;
       }
     } else {
