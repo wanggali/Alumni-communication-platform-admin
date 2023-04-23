@@ -2,7 +2,6 @@ import axios, {AxiosInstance, AxiosError, AxiosResponse, AxiosRequestConfig} fro
 
 const service: AxiosInstance = axios.create({
     timeout: 5000,
-    headers: {token: localStorage.getItem('acp_token')},
     baseURL: 'http://localhost:9001/api'
 });
 
@@ -10,6 +9,9 @@ service.defaults.withCredentials = true; // 配置为true
 
 service.interceptors.request.use(
     (config: AxiosRequestConfig) => {
+        if (localStorage.getItem('acp_token')) {
+            config.headers["acp_token"] = localStorage.getItem('acp_token')
+        }
         return config;
     },
     (error: AxiosError) => {
