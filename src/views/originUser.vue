@@ -109,7 +109,7 @@ interface queryPage {
 
 const tableData = ref<OriginUserType>([])
 const query = reactive<queryPage>({
-  oid: 0,
+  oid: null,
   pageNum: 1,
   pageSize: 10,
   userName: '',
@@ -124,7 +124,7 @@ onMounted(() => {
  */
 const pageTotal = ref<number>()
 const showAllOriginUser = async () => {
-  query.oid = parseInt(route.params?.id[0])
+  query.oid = Number(route.params?.id)
   if (query.oid < 0) {
     return;
   }
