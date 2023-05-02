@@ -16,6 +16,7 @@
 <script lang="ts" setup>
 import {onMounted, reactive, ref} from "vue";
 import {getCollegeInfo} from "../api/college";
+import College from "../model/College";
 
 onMounted(() => {
   collegeValues()
@@ -29,7 +30,7 @@ const query = reactive<any>({
 /**
  * 获取全部学院
  */
-const collegeInfo = ref<college>({})
+const collegeInfo = ref<College>({})
 const collegeValues = async () => {
   const result = await getCollegeInfo(query)
   if (result.code == 0) {

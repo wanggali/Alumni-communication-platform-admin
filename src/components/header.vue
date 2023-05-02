@@ -9,7 +9,7 @@
         <Fold/>
       </el-icon>
     </div>
-    <div class="logo"><img class="logo-img" src="src/assets/img/logo.png">校友交流后台管理系统</div>
+    <div class="logo"><img class="logo-img" src="../assets/img/logo.png">校友交流后台管理系统</div>
     <div class="header-right">
       <div class="header-user-con">
         <!-- 用户头像 -->

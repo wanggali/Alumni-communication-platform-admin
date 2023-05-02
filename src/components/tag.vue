@@ -41,7 +41,7 @@ const emit = defineEmits(["get-tag-id"])
 /**
  * 子接受数据
  **/
-const id = ref<bigint>(0n)
+const id = ref<number>(0)
 const tagName = ref<string>('')
 const prop = defineProps<{
   tagName: string
