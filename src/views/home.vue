@@ -5,11 +5,11 @@
 		<v-tags></v-tags>
 		<div class="content">
 			<router-view v-slot="{ Component }">
-				<transition name="move" mode="out-in">
+<!--				<transition name="move" mode="out-in">-->
 					<keep-alive :include="tags.nameList">
 						<component :is="Component"></component>
 					</keep-alive>
-				</transition>
+<!--				</transition>-->
 			</router-view>
 		</div>
 	</div>

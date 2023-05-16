@@ -27,8 +27,8 @@
                   v-permiss="item.permiss"
               >
                 <template #title>{{ subItem.title }}</template>
-                <el-menu-item v-for="(threeItem, i) in subItem.subs" :key="i" :index="threeItem.index">
-                  {{ threeItem.title }}
+                <el-menu-item v-for="(threeItem, i) in subItem.subs" :key="threeItem.index" :index="threeItem.index">
+                  {{ threeItem.title}}
                 </el-menu-item>
               </el-sub-menu>
               <el-menu-item v-else :index="subItem.index" v-permiss="item.permiss">
@@ -112,6 +112,7 @@ const items = [
   },
   {
     icon: 'ChatDotRound',
+    index:'1',
     title: '帖子管理',
     permiss: '10',
     subs: [
@@ -130,6 +131,7 @@ const items = [
   {
     icon: 'ChatDotSquare',
     title: '问题管理',
+    index:'2',
     permiss: '13',
     subs: [
       {
@@ -147,6 +149,7 @@ const items = [
   {
     icon: 'ChatLineSquare',
     title: '动态管理',
+    index:'3',
     permiss: '16',
     subs: [
       {
@@ -164,6 +167,7 @@ const items = [
   {
     icon: 'Open',
     title: '权限管理',
+    index:'4',
     permiss: '17',
     subs: [
       {
