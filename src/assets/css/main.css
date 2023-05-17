@@ -198,6 +198,6 @@ a {
     font-size: 18px;
 }
 
-/*[hidden]{*/
-/*    display: none !important;*/
-/*}*/
+[hidden]{
+    display: none !important;
+}
