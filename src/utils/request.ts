@@ -3,6 +3,7 @@ import axios, {AxiosInstance, AxiosError, AxiosResponse, AxiosRequestConfig} fro
 const service: AxiosInstance = axios.create({
     timeout: 5000,
     baseURL: 'http://localhost:9001/api'
+    // baseURL: 'http://1.12.251.233:7777/api'
 });
 
 service.defaults.withCredentials = true; // 配置为true
